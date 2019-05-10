@@ -25,12 +25,12 @@ public class Gmail_Login {
 		driver.findElement(By.id("identifierId")).sendKeys("qadarshan@gmail.com"+Keys.ENTER);
 		
 		
-		Thread.sleep(5000);  //Timeout to load password
+		Thread.sleep(5000);     //Timeout to load password editbox
 		
 		
-		//IDentify password editbox
+		//Identify password editbox 
 		driver.findElement(By.name("password")).clear();
-		driver.findElement(By.name("password")).sendKeys("Hello123456"+Keys.ENTER);
+		driver.findElement(By.name("password")).sendKeys("Hello1234"+Keys.ENTER);
 		
 		
 		
