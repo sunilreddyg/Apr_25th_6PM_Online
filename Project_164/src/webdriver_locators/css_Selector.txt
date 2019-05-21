@@ -132,7 +132,7 @@ Example:--> target element with matching characters
 
 Example:--> target element with start characters
 
-	Manual Browser         :-->   <input  id="email_987jjhf"></input>
+	Manual Browser     :-->   <input  id="email_987jjhf"></input>
 	Automation Browser :-->   <input  id="email_34534"></input>
 
 
