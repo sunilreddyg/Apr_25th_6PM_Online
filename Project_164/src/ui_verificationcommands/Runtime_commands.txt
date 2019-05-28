@@ -115,7 +115,7 @@ getText:--->
 				  	String value=Element.getAttribute("attributename");
 				  	System.out.println(value);	
 				  	
-				  	Note:--> Developer use attributes only to chanage runtime
+				  	Note:--> Developer use attributes to chanage runtime
 				  			behaviour of element. by capture element attributes
 				  			at runtime we can prove element behaviour available
 				  			w.r.t client requirement.
