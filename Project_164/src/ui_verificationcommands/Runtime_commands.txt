@@ -206,7 +206,7 @@ getsize:-->
 ==========================================================================>
 Validation Commands:-->
 
-		In selenium all validation command verify any web element
+		In selenium all validation commands verify any web element
 		behaviour and return boolean value true/false
 		
 		List of validation Commands available:-->
@@ -215,10 +215,10 @@ Validation Commands:-->
 			IsSelected
 			IsEnabeld
 			
-	==========================================>>
-	=>isDisplayed:-->
+==========================================>>
+=>isDisplayed:-->
 			Method verify element visibility or hidden state
-			and return true/ false during runtime...
+			and return boolean value true/ false during runtime...
 				
 				
 		syntax:-->
@@ -226,7 +226,19 @@ Validation Commands:-->
 					
 				boolean flag=Element.isDisplayed();
 				system.out.println("Element visible Status  "+flag);
-==============================================================>IsSelected:-->
+				
+============================================>
+=> IsEnabled:-->
+		 Method verify element enabled or disabled status and return
+		 boolean value true/false.
+		 
+		 syntax:-->
+				WebElement Element=driver.findElement(By.id("X"));
+					
+				boolean flag=Element.isEnabled();
+				system.out.println("Element Enabled Status  "+flag);
+						
+===================================================>
 Isselected:-->
 			Method return true/false  on element selection state
 			for radio button and checkboxes.
@@ -237,8 +249,12 @@ Isselected:-->
 					
 					boolean flag=Element.Isselected();
 					System.out.println("Element Selected "+flag);
-						
+====================================================>>
+
+
+
 Example:--> checkbox selection using webdriver...	
+
 to deselect checkbox :---->
 
 			//Identify Element
