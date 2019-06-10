@@ -1,7 +1,7 @@
-/browser_launch/
 /corejava/
 /selenium_webdriver/
 /switch_commands/
 /ui_verificationcommands/
-/webdriver_locators/
+/browser_launch/
 /validationcommands/
+/webdriver_locators/
