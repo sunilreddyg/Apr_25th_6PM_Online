@@ -6,11 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class MouseActions {
+public class MouseActions 
+{
 
 	public static void main(String[] args) 
 	{
-	
+		//Don't execute this program..
 		
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.domainname.in");
