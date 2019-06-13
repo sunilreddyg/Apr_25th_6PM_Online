@@ -1,0 +1,47 @@
+Mouse interactions:-->
+
+	Click
+	DoubleClick
+	ContextClick ---> RightClick
+	MovetoElement
+	ClickAndHold
+	Release
+	DragAndDrop
+	DragAndDropBy
+	
+	
+Keyboard interactions:-->
+
+	Sendkeys
+	KeyDown
+	KeyUp
+	
+	
+Touch Interactions:-->
+
+	SinpleTap 
+	DoubleTap
+	LongPress
+	Scroll
+	Up
+	Down
+	Flick
+	Move
+	
+	
+	
+	Note:--> Inorder to access mouse interaction and keyboard interactions
+			 We need to create object for "Actions" class.
+			 
+			 
+			 
+	Note:--> Inorder to access touch, Mouse, Keyboard interactions we 
+			 need to create object for  "TouchActions" class.	 
+	
+	
+=================================================>>
+	
+	
+	
+	
+	
