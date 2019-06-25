@@ -1,0 +1,34 @@
+Collection:-->
+		=> Collections store set of objects
+		=> All collection comes with root methods to manipulate data at runtime.
+		
+					Add
+					AddAll
+					Remove
+					Contains
+					Size
+					IsEmpty
+					Clear
+					iterator
+					
+		NOte:-->
+				=> Array store set of objects it was fixed objects.
+				=> Collection accept dynamic changes at runtime..
+				
+		
+		Set:-->
+				=> Set is a unorder collection of objects and never allow duplicate
+					values to store..
+		
+		List:-->
+				=> Store object in specified order and accept duplications.
+		
+		Map:-->		
+				=> Map helps to store set of pair objects.
+						Key=value
+				=> Map follow set Interface 
+				
+				
+				
+				
+				
