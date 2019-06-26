@@ -3,55 +3,54 @@ package corejava.collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class List_interface {
+public class List_interface 
+{
 
 	public static void main(String[] args) 
 	{
 		
 			/*
-			 * list:--> List store object inorder and accept duplicates
+			 * list:--> List store set of object inorder and accept duplicates
 			 */
 		
-			  List<String> list=new ArrayList<String>();
-			  list.add("IDE");
-			  list.add("RC");
-			  list.add("WD");
-			  list.add("GRID");
-			  list.add("APPIUM");
-			  list.add("BDD");
-			  list.add("WD");
+			List<String> list=new ArrayList<String>();
+			list.add("IDE");
+			list.add("RC");
+			list.add("WD");
+			list.add("GRID");
+			list.add("APPIUM");
+			list.add("BDD");
+			list.add("WD");
+			
+			
+			//Count list of objects
+			int Count=list.size();
+			System.out.println("Total object count is => "+Count);
 			  
-			  
-			  //Get count of objects under list
-			  int length=list.size();
-			  System.out.println("Count of object at list is => "+length);
-			  
-			  
-			  /*
-			   * get;--> is a method under list interface it allow any object
-			   * 		to get using index number.
-			   */
-			  String object=list.get(4);
-			  System.out.println("4th index object under list is => "+object);
-			  
-			  
-			  
-			  //Print All object under list using for loop
-			  for (int i = 0; i < length; i++) 
-			  {
-				  String each_object=list.get(i);
-				  System.out.println("=> "+each_object);
-			  } 
-			  
-			  
-			  
-			  //Print All object under list using foreach loop
-			  for (String each_item : list) 
-			  {
-				System.out.println("#  "+each_item);
-			  }
-			  
-			  
+			
+			//Get any single object from list of object.
+			String toolname=list.get(2);
+			System.out.println("toolname at 2nd position => "+toolname);
+			
+			
+			//Using for loop iterate for list of object times
+			for (int i = 0; i < list.size(); i++) 
+			{
+				String tool=list.get(i);
+				System.out.println("=> "+tool);
+			}
+			
+			
+			System.out.println("\n");  //It create new line at console
+			
+			
+			
+			
+			//Using foreach loop iterate list of object times
+			for (String eachtool : list) 
+			{
+				System.out.println("=> "+eachtool);
+			}
 			  
 	}
 

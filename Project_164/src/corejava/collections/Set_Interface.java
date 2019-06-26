@@ -2,6 +2,7 @@ package corejava.collections;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Set_Interface 
 {
@@ -12,7 +13,7 @@ public class Set_Interface
 		/*
 		 * Set:--> Unorder collection of objects.Set Doesn't accept duplicates
 		 */
-		      Set<String> set=new HashSet<String>();
+		      Set<String> set=new TreeSet<String>();
 		      set.add("IDE");
 		      set.add("RC");
 		      set.add("WD");

@@ -11,6 +11,9 @@ public class HashTable {
 		/*
 		 *  Hash accept objects to store using key and value, Hashset
 		 *  allow pair values to store.
+		 *  
+		 *  => Hashtable store data same as Set Interface And also doesn't
+		 *     support duplicate values to store.
 		 */
 		
 		
@@ -20,25 +23,23 @@ public class HashTable {
 		hash.put(3,"WD");
 		hash.put(4,"GRID");
 		hash.put(5,"APPIUM");
-		
+		hash.put(6,"RC");
 		
 		//using keyname get keyvalue
-		String toolname=hash.get(3);
-		System.out.println("toolname is => "+toolname);
-		
-		
-		//Get All keyvalue usng keset
-		Set<Integer> keys=hash.keySet();
-		for (Integer eachkey : keys) 
-		{
-			//using each keyname return key value
-			System.out.println(hash.get(eachkey));
-		}
+		String tname=hash.get(2);
+		System.out.println("Toolname is => "+tname);
 		
 		
 		
-		
+		//Get All keyset values
+		Set<Integer> set=hash.keySet();
         
+		//Foreach loop to iterate number of keyset times
+		for (Integer eachkey : set) 
+		{
+			 String kvalue=hash.get(eachkey);
+			 System.out.println(kvalue);
+		}
         
         
 		
