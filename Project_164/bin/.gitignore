@@ -1,6 +1,11 @@
 /browser_launch/
 /capturescreen/
 /corejava/
+/findelements/
+/method_parameters/
+/pageobjects/
+/waitcommands/
+/webdriver_locators/
 /mouse_and_keyboard_interactions/
 /robot_actions/
 /selenium_webdriver/
@@ -8,7 +13,3 @@
 /touch_interactions/
 /ui_verificationcommands/
 /validationcommands/
-/webdriver_locators/
-/waitcommands/
-/pageobjects/
-/findelements/
