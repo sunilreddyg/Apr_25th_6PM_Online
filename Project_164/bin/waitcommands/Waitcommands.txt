@@ -1,0 +1,269 @@
+
+Wait commands:--->
+	=> Also known as synchronization commands..
+	=> Webdriver had default synchronization support 
+		on new PageLoad...
+
+	for other timeouts to manage we follow below wait commands
+
+	    Thread.Sleep(ms);
+		ImplicitWait
+		ExplicitWait
+		FluentWait
+
+Thread.Sleep(ms):--->
+	is a java timeout command, It won't specify timegap 
+	w.r.t application..
+	
+
+	public void method1() throws InterruptedException
+	{
+		Thread.Sleep(5000);
+	}
+
+	Note:--> Thread.Sleep is a exceptional command to avoid runtime syntax error.
+		Add throws interruptedExceptiont to  method.
+
+
+==========================================================>>
+
+
+Implicitwait:-->
+	* Implicit wait manage timegap w.r.t application.
+	* Implicit wait we define only once at browser launch time
+
+	Implicit wait mainly categorized into 3 types
+		Implicitlywait
+		PageloadTimeout
+		SetScriptTimeout
+		
+	* Implicit wait enable timeout on Exception only. 
+	  After enabled timeout Once expected behaviour found, 
+	  It continues execution without wait for timeout.
+
+	* Incase Expected baviour not found until timeout completed. It 
+	  throws exception.
+	  
+	Syntax:-->
+		
+		//Set timeout until object load at document object model [DOM]
+		driver.manage().timeouts().Implicitlywait(50,Timeunit.Seconds);
+
+
+		//Set timeout until pageobjects load at browser window
+		driver.manage().timeouts().pageloadtimeout(50,Timeunit.Seconds);
+	
+		//Set timeout until asynchronized source to load.
+		driver.manage().timeouts().setScriptTimeout(50,Timeunit.Seconds);
+
+		
+----------------------------------------------------------------------------------->
+ExplicitWait:-->
+	* Explicitwait manage timegap w.r.t application.
+	* Using explicitwait statement we can set timegap for object behaviour.
+		it will wait until object behaviour load at front page.
+		
+
+
+	Note:--> ExplicitWait accomplish with "Expected Conditions" class
+
+	ExpectedConditions:-->
+		is a Userinterface valdiation class. It contain set of 
+		validation commands to check UserInterface behaviour...
+
+		Expected conditions also can implement directly without
+		help of wait commands...
+								titleis
+								titlecontains
+								urltobe
+								urlcontains
+								ElementselectionstateToBe
+								ElementTobeselected
+								visbilityfoElementLocated
+								InvisibilityofElementLocated
+								PresenceofElementLocated
+								ElementTobeClickable
+								TextpresentedAtElementlocation
+								TextPresentedAtElementvalue
+								AttributeContains
+								AttributeTobe
+								AlertPresented
+								FrameTobeAvailableAndswitchToit
+								NumberofWindowsTobe
+		
+	Syntax:-->
+	
+			WebdriverWait  wait=new WebDriverwait(driver,100);
+			wait.until(ExpectedConditions.titleContains("Expected page  title"));		
+		
+		
+ExpectedConditions:--->
+
+
+titleIs:--->
+		An expecation to verify expected title presented at webpage
+		
+		titleIs command without Webdriverwait:----->
+		
+			boolean flag=ExpectedConditions.titleIs("Exp_title").apply(driver).booleanValue();
+			System.out.println("Expected title available status "+flag)
+
+		titleIs command with Webdriverwait:----->
+
+				WebdriverWait  wait=new WebDriverwait(driver,100);
+				wait.until(ExpectedConditions.titleis("Expected page title"));
+				
+				
+titleContains:-->
+		An expecation to verify expected or parital title presented...
+				
+				
+		titleContains command without Webdriverwait:----->
+		
+			boolean flag=ExpectedConditions.titleContains("Exp_parial_title").apply(driver).booleanValue();
+			System.out.println("Expected title available status "+flag)
+
+		titleContains command with Webdriverwait:----->
+
+			WebdriverWait  wait=new WebDriverwait(driver,100);
+			wait.until(ExpectedConditions.titleContais("title or partial title"));
+			
+urltobe:--->
+		An expecation to verify expected url presented at webpage
+			
+						
+		urltobe command without Webdriverwait:----->
+		
+			boolean flag=ExpectedConditions.urltobe("Exp_url").apply(driver).booleanValue();
+			System.out.println("Expected url available status "+flag)
+			
+		
+		urltobe command with Webdriverwait:----->
+
+			WebdriverWait  wait=new WebDriverwait(driver,100);
+			wait.until(ExpectedConditions.urltobe("Expectdurl"));	
+			
+urlcontains:--->
+
+		urlcontains command without Webdriverwait:----->
+		
+			boolean flag=ExpectedConditions.urlcontains("Exp_url_or_partial").apply(driver).booleanValue();
+			System.out.println("Expected url available status "+flag)
+			
+		
+		urlcontains command with Webdriverwait:----->
+
+			WebdriverWait  wait=new WebDriverwait(driver,100);
+			wait.until(ExpectedConditions.urlcontains("Expectdurl_or_partial"));
+			
+
+visibilityOfElementLocated:-->
+
+		An expectation to verify expected element visible at webpage	
+			
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+	
+textToBePresentInElementLocated:--->
+		An expectation to verify text presented at selected Element..
+		
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("x"),"Expected Text"));
+				
+				
+textToBePresentInElementValue:--->
+		An expecation to verify expected input presented at editbox...
+
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("x"),"inputvalue"));
+				
+	
+attributeContains:-->
+	   An expecation to verify expected arrtibute contains at webelemnt...	
+	
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.attributeContains(By.id("x"),"attributename","attributevalue));
+				
+============================================================================
+	
+
+VisibilityofElementLocated:-->
+		An expecation to verify Selected Element visible at webpage. And Method
+		is a webelement return type..
+
+	
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.visibilityOfElementLocated(By.id("X")));
+
+
+InvisibilityofElementLocated:-->
+		An expecation to verify selected element hidden at webpage. And method
+		is a boolean return type.
+
+
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.InvisibilityofElemnetLocated(By.id("X")));
+
+
+PresenceofElementLocated:-->
+
+		An expecation to verify selected element presence and DOM [backend html source],
+		Method is a boolean return type.
+			
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.PresenceofElemnetLocated(By.id("X")));
+
+ElementTobeClickable:-->
+		
+		An expectation to verify selected element is in ready state and allow user to perform
+		click action on element. And method is a webelement return type.
+
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.elementToBeClickable(By.id("X")));
+
+
+ElementtobeSelected:-->
+		An expectation to verify element selection state is True. Until Radio button/ checkbox selected
+		at user interface.
+
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.elementtobeselected(By.id("X")));
+
+ElementSelectionStateTobe:-->
+		An expectation to verify element selection state is True. Until Radio button/ checkbox selected
+		at user interface.
+			Note:--> This condition allow to verify element selection and deselection state.
+
+
+			WebDriverWait wait=new WebDriverWait(driver, 50);
+			wait.until(Expectedconditions.ElementSelectionStateTobe(By.id("X")),ture/false);
+
+AlertPresented:-->
+
+		An expecation to verify alert presented at webpage. Method return to Alert interface class.
+
+
+		WebDriverWait wait=new WebDriverWait(driver, 50);
+		wait.until(Expectedconditions.Alertpresented()).accept();
+
+
+
+FrameTobeAvailableAndSwitchToIT:-->
+
+		An expectation to load frame at HTML source. And alos it switch to particular frame which we
+		identified.
+
+		WebDriverWait wait=new WebDriverWait(driver, 50);
+		wait.until(Expectedconditions.FrametobeAvailableAndSwitchToIt("FrameID"));
+		
+	
+NumbersofTobe:-->
+
+		An expecation to verify expected number of windows loaded at webpage.
+
+			
+		WebDriverWait wait=new WebDriverWait(driver, 50);
+		wait.until(Expectedconditions.NumberofWindowsTobe(2));	
+			
+			
+

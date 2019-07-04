@@ -1,16 +1,1 @@
-/browser_launch/
-/capturescreen/
-/corejava/
-/findelements/
-/method_parameters/
-/method_return_types/
-/pageobjects/
-/selenium_webdriver/
-/switch_commands/
-/touch_interactions/
-/ui_verificationcommands/
-/validationcommands/
-/waitcommands/
-/webdriver_locators/
-/mouse_and_keyboard_interactions/
-/robot_actions/
+/datadriven_Framework/
