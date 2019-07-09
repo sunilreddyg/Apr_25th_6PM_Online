@@ -38,9 +38,7 @@ public class Excel_Read_MultipleRows_Data {
 		driver.manage().window().maximize();
 		
 		
-		
-		
-		
+
 		//Iterate for number of rows
 		for (int i = 5; i <= Rcount; i++) 
 		{
