@@ -15,7 +15,13 @@ public class Run_Excel_Keywords
 			String UID=ExcelKeywords.getcelldata(i, 0);
 			System.out.println(UID);
 			
+			//Write Celldata
+			ExcelKeywords.write_celldata(i, 2, "Testpass");
+			
 		}
+		
+		//Create output file
+		ExcelKeywords.Create_excel_output("OP.xlsx");
 	}
 
 }
