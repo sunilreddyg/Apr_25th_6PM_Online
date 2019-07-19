@@ -75,70 +75,6 @@ Reporting syntax at Testng:-->
 	Note:-->	Above reporting option only we define under test annotated method
 
 
-
-----------TestNG suite file architecture---------------------
-
-<suite name="suitename">
-	<test name="test1">
-		<classes>
-           <class name="packagename.classname">
-		      <methods>
-					<include name="methodname > </include>											<include name="methodname"></include>
-					<exclude name="method name> </exclude>
-		       </methods>
-           </class>
-		</classes>
-	</test>
-</suite>
-
-------------------------------------------------------------************-------------------------------------------------------
-
-@BeforeSuite: The annotated method will be run before all tests in this 
-suite have run.
-
-@AfterSuite: The annotated method will be run after all tests in this suite have run.
-
-@BeforeTest: The annotated method will be run before any test method belonging 
-to the classes inside the <test> tag is run.
-
-@AfterTest: The annotated method will be run after all the test methods 
-belonging to the classes inside the <test> tag have run.
-
-@BeforeClass: The annotated method will be run before the first test method
- in the current class is invoked.
-
-@AfterClass: The annotated method will be run after all the test methods in
- the current class have been run.
-
-@BeforeMethod: The annotated method will be run before each test method.
-
-@AfterMethod: The annotated method will be run after each test method. 
-
-
------------------------------------------------------------------------------------------------->
-Running Testng classes from suite file:--->
-
-
-Creation of XML file:--->
-
-	Right click on project--->New---->Click Others
-	Select XML File---> EnterFilename with extension click on finish
-
-	Select source tab in XML file
-
-
-<suite name="sutie1">
-	<test name="test1">
-		<classes>
-			<class name="packagename.classname"></class>
-		</classes>
-	</test>
-</suite>
-
-
-Run Suite File:--->
-		Right click on suite file---->Run as ---->  TestNg Suite 
-
 -------------------------------------------------------------------------------------------->
 How to prioritize test methods with in testng class:--->
 
@@ -221,6 +157,74 @@ Assert:-->
 
 	Assert Statement send report to EmailableReports on Failure,
 	On success manually we need to define using Reporter.log option.
+
+==================================================================
+----------TestNG suite file architecture---------------------
+
+<suite name="suitename">
+	<test name="test1">
+		<classes>
+           <class name="packagename.classname">
+		      <methods>
+					<include name="methodname > </include>											<include name="methodname"></include>
+					<exclude name="method name> </exclude>
+		       </methods>
+           </class>
+		</classes>
+	</test>
+</suite>
+
+------------------------------------------------------------************-------------------------------------------------------
+
+@BeforeSuite: The annotated method will be run before all tests in this 
+suite have run.
+
+@AfterSuite: The annotated method will be run after all tests in this suite have run.
+
+@BeforeTest: The annotated method will be run before any test method belonging 
+to the classes inside the <test> tag is run.
+
+@AfterTest: The annotated method will be run after all the test methods 
+belonging to the classes inside the <test> tag have run.
+
+@BeforeClass: The annotated method will be run before the first test method
+ in the current class is invoked.
+
+@AfterClass: The annotated method will be run after all the test methods in
+ the current class have been run.
+
+@BeforeMethod: The annotated method will be run before each test method.
+
+@AfterMethod: The annotated method will be run after each test method. 
+
+
+------------------------------------------------------------------------------------------------>
+Running Testng classes from suite file:--->
+
+
+Creation of XML file:--->
+
+	Right click on project--->New---->Click Others
+	Select XML File---> EnterFilename with extension click on finish
+
+	Select source tab in XML file
+
+
+<suite name="sutie1">
+	<test name="test1">
+		<classes>
+			<class name="packagename.classname"></class>
+		</classes>
+	</test>
+</suite>
+
+
+Run Suite File:--->
+		Right click on suite file---->Run as ---->  TestNg Suite 
+
+
+
+
 
 ================How to Assign groups to TestNg  test=========
 

@@ -23,8 +23,6 @@ public class WebDriver_Testcase_Using_Testng
 {
   WebDriver driver;
   
-  
-  
   	@Test
 	void Verify_Signup_link() 
 	{
@@ -59,11 +57,6 @@ public class WebDriver_Testcase_Using_Testng
 	}
 	
 	
-	
-	
-	
-	
- 
   @BeforeMethod
   public void beforeMethod() 
   {

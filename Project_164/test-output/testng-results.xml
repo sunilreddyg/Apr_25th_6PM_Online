@@ -1,156 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
-    <line>
-      <![CDATA[Expected title presented => Messenger]]>
-    </line>
-    <line>
-      <![CDATA[Expected title presented => Log in to Facebook | Facebook]]>
-    </line>
-    <line>
-      <![CDATA[Expected title presented => Sign up for Facebook | Facebook]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44094" started-at="2019-07-18T14:26:44Z" finished-at="2019-07-18T14:27:28Z">
+  <suite name="Default suite" duration-ms="24749" started-at="2019-07-19T14:14:15Z" finished-at="2019-07-19T14:14:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44094" started-at="2019-07-18T14:26:44Z" finished-at="2019-07-18T14:27:28Z">
-      <class name="framework_testng.WebDriver_Testcase_Using_Testng">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="beforeClass" is-config="true" duration-ms="6186" started-at="2019-07-18T19:56:44Z" finished-at="2019-07-18T19:56:50Z">
+    <test name="Default test" duration-ms="24749" started-at="2019-07-19T14:14:15Z" finished-at="2019-07-19T14:14:39Z">
+      <class name="framework_testng.Invocation_Count">
+        <test-method status="PASS" signature="launch_browser()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="launch_browser" is-config="true" duration-ms="21177" started-at="2019-07-19T19:44:15Z" finished-at="2019-07-19T19:44:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="beforeMethod" is-config="true" duration-ms="6310" started-at="2019-07-18T19:56:50Z" finished-at="2019-07-18T19:56:56Z">
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="486" started-at="2019-07-19T19:44:36Z" finished-at="2019-07-19T19:44:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Verify_Games_link()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="Verify_Games_link" duration-ms="95" started-at="2019-07-18T19:56:56Z" finished-at="2019-07-18T19:56:56Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Facebook – log in or sign up] but found [Games]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Facebook – log in or sign up] but found [Games]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at framework_testng.WebDriver_Testcase_Using_Testng.Verify_Games_link(WebDriver_Testcase_Using_Testng.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="294" started-at="2019-07-19T19:44:36Z" finished-at="2019-07-19T19:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Games_link -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="afterMethod" is-config="true" duration-ms="649" started-at="2019-07-18T19:56:56Z" finished-at="2019-07-18T19:56:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[void framework_testng.WebDriver_Testcase_Using_Testng.Verify_Games_link()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="219" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="beforeMethod" is-config="true" duration-ms="4690" started-at="2019-07-18T19:56:57Z" finished-at="2019-07-18T19:57:02Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="279" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verify_Messenger_link()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="Verify_Messenger_link" duration-ms="4551" started-at="2019-07-18T19:57:02Z" finished-at="2019-07-18T19:57:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected title presented => Messenger]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Verify_Messenger_link -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="afterMethod" is-config="true" duration-ms="649" started-at="2019-07-18T19:57:06Z" finished-at="2019-07-18T19:57:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[void framework_testng.WebDriver_Testcase_Using_Testng.Verify_Messenger_link()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="222" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="beforeMethod" is-config="true" duration-ms="4179" started-at="2019-07-18T19:57:07Z" finished-at="2019-07-18T19:57:11Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="227" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verify_SignIn_link()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="Verify_SignIn_link" duration-ms="1140" started-at="2019-07-18T19:57:11Z" finished-at="2019-07-18T19:57:12Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected title presented => Log in to Facebook | Facebook]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Verify_SignIn_link -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="afterMethod" is-config="true" duration-ms="397" started-at="2019-07-18T19:57:12Z" finished-at="2019-07-18T19:57:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[void framework_testng.WebDriver_Testcase_Using_Testng.Verify_SignIn_link()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="239" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="beforeMethod" is-config="true" duration-ms="3812" started-at="2019-07-18T19:57:12Z" finished-at="2019-07-18T19:57:16Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="294" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verify_Signup_link()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="Verify_Signup_link" duration-ms="3758" started-at="2019-07-18T19:57:16Z" finished-at="2019-07-18T19:57:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected title presented => Sign up for Facebook | Facebook]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Verify_Signup_link -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="afterMethod" is-config="true" duration-ms="478" started-at="2019-07-18T19:57:20Z" finished-at="2019-07-18T19:57:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[void framework_testng.WebDriver_Testcase_Using_Testng.Verify_Signup_link()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="255" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework_testng.WebDriver_Testcase_Using_Testng@26653222]" name="afterClass" is-config="true" duration-ms="7138" started-at="2019-07-18T19:57:21Z" finished-at="2019-07-18T19:57:28Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="320" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- framework_testng.WebDriver_Testcase_Using_Testng -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="394" started-at="2019-07-19T19:44:39Z" finished-at="2019-07-19T19:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="265" started-at="2019-07-19T19:44:39Z" finished-at="2019-07-19T19:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- framework_testng.Invocation_Count -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
