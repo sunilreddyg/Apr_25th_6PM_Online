@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Default_Suite">
+		<test name="test1" verbose="2">
+				<classes>
+					<class name="framework_testng.TestSuite.Class1">
+						<methods>
+							<!-- invoke mehtod executon -->
+							<include name="tc002"></include>
+						</methods>
+					</class>
+					
+					<class name="framework_testng.TestSuite.Class2">
+						<methods>
+							<!-- ignore method execution -->
+							<exclude name="tc004"></exclude>
+						</methods>
+					</class>
+					
+				</classes>
+		</test>
+</suite>

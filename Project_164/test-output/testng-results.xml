@@ -1,65 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[Webpage load successfull]]>
+    </line>
+    <line>
+      <![CDATA[Email enter successfull]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24749" started-at="2019-07-19T14:14:15Z" finished-at="2019-07-19T14:14:39Z">
+  <suite name="default" duration-ms="37020" started-at="2019-07-22T14:19:36Z" finished-at="2019-07-22T14:20:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24749" started-at="2019-07-19T14:14:15Z" finished-at="2019-07-19T14:14:39Z">
-      <class name="framework_testng.Invocation_Count">
-        <test-method status="PASS" signature="launch_browser()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="launch_browser" is-config="true" duration-ms="21177" started-at="2019-07-19T19:44:15Z" finished-at="2019-07-19T19:44:36Z">
+    <test name="test1" duration-ms="37020" started-at="2019-07-22T14:19:36Z" finished-at="2019-07-22T14:20:13Z">
+      <class name="framework_testng.Suite_Parameter.Get_Parameters_From_Suite">
+        <test-method status="PASS" signature="launch_browser(java.lang.String)[pri:0, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="launch_browser" duration-ms="24436" started-at="2019-07-22T19:49:36Z" finished-at="2019-07-22T19:50:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_browser -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="486" started-at="2019-07-19T19:44:36Z" finished-at="2019-07-19T19:44:36Z">
+        <test-method status="PASS" signature="loadWebpage(java.lang.String)[pri:1, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="loadWebpage" duration-ms="11306" started-at="2019-07-22T19:50:00Z" finished-at="2019-07-22T19:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Webpage load successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loadWebpage -->
+        <test-method status="PASS" signature="User_login(java.lang.String, java.lang.String)[pri:2, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="User_login" duration-ms="836" started-at="2019-07-22T19:50:11Z" finished-at="2019-07-22T19:50:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Email enter successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_login -->
+        <test-method status="PASS" signature="User_registration(java.lang.String)[pri:3, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="User_registration" duration-ms="387" started-at="2019-07-22T19:50:12Z" finished-at="2019-07-22T19:50:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Newuser]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="294" started-at="2019-07-19T19:44:36Z" finished-at="2019-07-19T19:44:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="219" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="279" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="222" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="227" started-at="2019-07-19T19:44:37Z" finished-at="2019-07-19T19:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="239" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="294" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="255" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="320" started-at="2019-07-19T19:44:38Z" finished-at="2019-07-19T19:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="394" started-at="2019-07-19T19:44:39Z" finished-at="2019-07-19T19:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:framework_testng.Invocation_Count@29774679]" name="test1" duration-ms="265" started-at="2019-07-19T19:44:39Z" finished-at="2019-07-19T19:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- framework_testng.Invocation_Count -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- User_registration -->
+      </class> <!-- framework_testng.Suite_Parameter.Get_Parameters_From_Suite -->
+    </test> <!-- test1 -->
+  </suite> <!-- default -->
 </testng-results>
