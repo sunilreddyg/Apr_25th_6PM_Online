@@ -1,74 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
-    <line>
-      <![CDATA[Webpage load successfull]]>
-    </line>
-    <line>
-      <![CDATA[Email enter successfull]]>
-    </line>
   </reporter-output>
-  <suite name="default" duration-ms="37020" started-at="2019-07-22T14:19:36Z" finished-at="2019-07-22T14:20:13Z">
+  <suite name="Default suite" duration-ms="123" started-at="2019-07-24T14:11:45Z" finished-at="2019-07-24T14:11:45Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="37020" started-at="2019-07-22T14:19:36Z" finished-at="2019-07-22T14:20:13Z">
-      <class name="framework_testng.Suite_Parameter.Get_Parameters_From_Suite">
-        <test-method status="PASS" signature="launch_browser(java.lang.String)[pri:0, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="launch_browser" duration-ms="24436" started-at="2019-07-22T19:49:36Z" finished-at="2019-07-22T19:50:00Z">
+    <test name="Default test" duration-ms="123" started-at="2019-07-24T14:11:45Z" finished-at="2019-07-24T14:11:45Z">
+      <class name="framework_testng.DP.Get_DP_Data_From_Diff_Class">
+        <test-method status="PASS" signature="get_info(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework_testng.DP.Get_DP_Data_From_Diff_Class@2b98378d]" name="get_info" duration-ms="15" started-at="2019-07-24T19:41:45Z" data-provider="User_info" finished-at="2019-07-24T19:41:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch_browser -->
-        <test-method status="PASS" signature="loadWebpage(java.lang.String)[pri:1, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="loadWebpage" duration-ms="11306" started-at="2019-07-22T19:50:00Z" finished-at="2019-07-22T19:50:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://facebook.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Webpage load successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loadWebpage -->
-        <test-method status="PASS" signature="User_login(java.lang.String, java.lang.String)[pri:2, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="User_login" duration-ms="836" started-at="2019-07-22T19:50:11Z" finished-at="2019-07-22T19:50:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vijay]]>
+                <![CDATA[user1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[hello]]>
+                <![CDATA[9030248855]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user1.info@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Email enter successfull]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- User_login -->
-        <test-method status="PASS" signature="User_registration(java.lang.String)[pri:3, instance:framework_testng.Suite_Parameter.Get_Parameters_From_Suite@59fa1d9b]" name="User_registration" duration-ms="387" started-at="2019-07-22T19:50:12Z" finished-at="2019-07-22T19:50:13Z">
+        </test-method> <!-- get_info -->
+        <test-method status="PASS" signature="get_info(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework_testng.DP.Get_DP_Data_From_Diff_Class@2b98378d]" name="get_info" duration-ms="5" started-at="2019-07-24T19:41:45Z" data-provider="User_info" finished-at="2019-07-24T19:41:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Newuser]]>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9030848855]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user2.info@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_registration -->
-      </class> <!-- framework_testng.Suite_Parameter.Get_Parameters_From_Suite -->
-    </test> <!-- test1 -->
-  </suite> <!-- default -->
+        </test-method> <!-- get_info -->
+        <test-method status="PASS" signature="get_info(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework_testng.DP.Get_DP_Data_From_Diff_Class@2b98378d]" name="get_info" duration-ms="9" started-at="2019-07-24T19:41:45Z" data-provider="User_info" finished-at="2019-07-24T19:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9030268855]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user3.info@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_info -->
+        <test-method status="PASS" signature="get_info(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework_testng.DP.Get_DP_Data_From_Diff_Class@2b98378d]" name="get_info" duration-ms="2" started-at="2019-07-24T19:41:45Z" data-provider="User_info" finished-at="2019-07-24T19:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9030168855]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user4.info@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_info -->
+      </class> <!-- framework_testng.DP.Get_DP_Data_From_Diff_Class -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
